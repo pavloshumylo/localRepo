@@ -6,10 +6,12 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile project(':firstModule')
+    compile group: 'first', name: 'firstModule', version: '1.0'
+
 }
